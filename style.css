@@ -171,6 +171,74 @@ button {
   color: #059f54;
 }
 
+/* podcast section  */
+
+.podcast {
+  padding: 50px 0 120px;
+  background: #1a0b2e;
+}
+
+.description-title {
+  max-width: 75%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.description-title h2 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.8;
+  opacity: 0.7;
+}
+
+.description span {
+  display: block;
+  margin-top: 18px;
+  opacity: 0.7;
+}
+
+.podcast-divider {
+  width: 100%;
+  height: 1px;
+  margin: 60px 0;
+  background-color: white;
+  opacity: 0.3;
+}
+
+.podcast-grids {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: start;
+  text-align: center;
+}
+
+.podcast-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.podcast-grid h3 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #02e97d;
+  margin-bottom: 8px;
+  line-height: 1;
+}
+
+.podcast-grid span {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.7;
+  line-height: 1.2;
+}
+
 /* responsive */
 
 @media screen and (max-width: 576px) {
@@ -214,76 +282,47 @@ button {
     top: 13px;
     right: 1px;
   }
+
+  /* podcast  */
+
+  .podcast {
+    padding: 40px 0 80px;
+  }
+
+  .description-title {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
+  .description-title h2 {
+    font-size: 32px;
+    margin-bottom: 14px;
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .description span {
+    margin-top: 14px;
+  }
+
+  .podcast-divider {
+    margin: 40px 0;
+  }
+
+  .podcast-grids {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 24px;
+  }
+
+  .podcast-grid h3 {
+    font-size: 34px;
+  }
+
+  .podcast-grid span {
+    font-size: 11px;
+    letter-spacing: 0.8px;
+  }
 }
-
-
-
-
-
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #1a0b2e;
-}
-
-.brand {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.text-color {
-  display: inline-block;
-  background: linear-gradient(
-    185deg,
-    rgba(145, 0, 248, 1),
-    rgb(252, 6, 178),
-    rgb(249, 230, 18)
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.menu-links {
-  display: flex;
-  gap: 30px;
-  font-size: 16px;
-}
-
-.menu-links a {
-  position: relative;
-  padding-bottom: 4px;
-}
-
-.menu-toggle {
-  display: none;
-  width: 24px;
-}
-
-button {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 12px 22px;
-  border-radius: 1000px;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.btn-color {
-  color: #fff;
-  font-size: 16px;
-  font-weight: 600;
- background: linear-gradient(
-    185deg,
-    rgba(145, 0, 248, 1),
-    rgb(252, 6, 178),
-    rgb(249, 230, 18)
-  );
-  padding: 10px 20px;
-  border-radius: 1000px;
-  border: none;
-}
-
