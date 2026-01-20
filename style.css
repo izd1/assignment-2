@@ -488,6 +488,92 @@ button {
   opacity: 0.6;
 }
 
+/* animations */
+
+button,
+.btn-color {
+  transition: transform 1s ease;
+}
+.btn-outline {
+  transition: color 1s ease background-color 1s ease transform 1s ease;
+}
+button:hover,
+.btn-color:hover {
+  transform: scale(1.1);
+}
+.btn-outline:hover {
+  color: #fff;
+  background-color: rgba(124, 246, 148, 0.289);
+  transform: scale(1.1);
+}
+.menu-links a {
+  transition: transform 0.3s ease;
+}
+
+.menu-links a:hover {
+  transform: scale(1.2);
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.banner-circle {
+  animation: beat 4s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow:
+      0 0 6px rgba(44, 255, 154, 0.4),
+      0 0 12px rgba(44, 255, 154, 0.3);
+  }
+  50% {
+    box-shadow:
+      0 0 10px rgba(44, 255, 154, 0.8),
+      0 0 24px rgba(44, 255, 154, 0.7);
+  }
+  100% {
+    box-shadow:
+      0 0 6px rgba(44, 255, 154, 0.4),
+      0 0 12px rgba(44, 255, 154, 0.3);
+  }
+}
+
+.new {
+  animation: glow 2s ease-in-out infinite;
+}
+
+.profile-social a {
+  transition: background-color 0.3s ease transform 0.3s ease;
+}
+.profile-social a:hover {
+  transform: scale(1.1);
+  background: rgba(136, 16, 100, 0.444);
+}
+.footer-icons a {
+  transition: opacity 0.3s ease transform 0.3s ease;
+}
+
+.footer-icons a:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
 /* responsive */
 
 @media screen and (max-width: 576px) {
